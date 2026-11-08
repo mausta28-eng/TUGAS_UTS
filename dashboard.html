@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard | Toko Buku Pustaka</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dashboard">
+<header class="atas">
+  <a class="logo" href="dashboard.html"><img src="assets/logo.png" alt="" width="40" height="40">Pustaka</a>
+  <nav aria-label="Navigasi utama">
+    <a href="dashboard.html" aria-current="page">Dashboard</a>
+    <a href="stok.html">Katalog</a>
+    <a href="checkout.html">Pemesanan</a>
+    <a href="tracking.html">Tracking</a>
+    <a href="laporan.html">Laporan</a>
+    <a href="riwayat.html">Riwayat</a>
+    <button type="button" id="keluar">Keluar</button>
+  </nav>
+</header>
+<main>
+<section><h1 id="greeting"></h1><p id="jam"></p></section>
+<div class="menu">
+  <a href="stok.html"><strong>Informasi Stok / Katalog</strong>Lihat dan tambah stok buku</a>
+  <a href="tracking.html"><strong>Tracking Pengiriman</strong>Cari nomor Delivery Order</a>
+  <a href="laporan.html"><strong>Laporan Pemesanan</strong>Ringkasan penjualan</a>
+  <a href="riwayat.html"><strong>History Transaksi</strong>Semua pesanan</a>
+  <a href="checkout.html"><strong>Buat Pesanan</strong>Checkout buku</a>
+</div>
+</main>
+<footer><p>Toko Buku Pustaka - Tugas UTS Pemrograman Web 1</p></footer>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

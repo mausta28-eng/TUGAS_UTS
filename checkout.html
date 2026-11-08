@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pemesanan | Toko Buku Pustaka</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="checkout">
+<header class="atas">
+  <a class="logo" href="dashboard.html"><img src="assets/logo.png" alt="" width="40" height="40">Pustaka</a>
+  <nav aria-label="Navigasi utama">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="stok.html">Katalog</a>
+    <a href="checkout.html" aria-current="page">Pemesanan</a>
+    <a href="tracking.html">Tracking</a>
+    <a href="laporan.html">Laporan</a>
+    <a href="riwayat.html">Riwayat</a>
+    <button type="button" id="keluar">Keluar</button>
+  </nav>
+</header>
+<main>
+<section><h1>Pemesanan Buku</h1>
+<form id="formTambah" class="grid2"><label>Pilih buku<select id="pilihBuku"></select></label><label>Jumlah<input type="number" id="qty" min="1" value="1" required></label><div><button class="btn">Tambah ke keranjang</button></div></form>
+<div class="tabel"><table id="tbCart"><thead><tr><th>Buku</th><th>Harga</th><th>Jumlah</th><th>Subtotal</th><th>Aksi</th></tr></thead><tbody></tbody></table></div></section>
+<section><h2>Data Pemesan dan Pembayaran</h2>
+<form id="formPesan"><div class="grid2">
+<label>Nama pemesan<input name="nama" required></label>
+<label>No. telepon<input name="telp" required inputmode="numeric" placeholder="081234567890"></label>
+<label>Ekspedisi<select name="ekspedisi"><option>JNE</option><option>J&amp;T Express</option><option>SiCepat</option></select></label>
+<label>Jenis paket<select name="jenis" id="jenis"><option>Reguler</option><option>Express</option></select></label>
+<label>Metode pembayaran<select name="bayar"><option>Transfer Bank</option><option>E-Wallet</option><option>COD</option></select></label></div>
+<label>Alamat pengiriman<textarea name="alamat" rows="3" required></textarea></label>
+<p>Total bayar (termasuk ongkir): <strong id="totalBayar" class="besar"></strong></p>
+<button class="btn">Buat pesanan</button><p id="pPesan"></p></form></section>
+</main>
+<footer><p>Toko Buku Pustaka - Tugas UTS Pemrograman Web 1</p></footer>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

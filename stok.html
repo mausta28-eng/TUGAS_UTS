@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Katalog Buku | Toko Buku Pustaka</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="stok">
+<header class="atas">
+  <a class="logo" href="dashboard.html"><img src="assets/logo.png" alt="" width="40" height="40">Pustaka</a>
+  <nav aria-label="Navigasi utama">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="stok.html" aria-current="page">Katalog</a>
+    <a href="checkout.html">Pemesanan</a>
+    <a href="tracking.html">Tracking</a>
+    <a href="laporan.html">Laporan</a>
+    <a href="riwayat.html">Riwayat</a>
+    <button type="button" id="keluar">Keluar</button>
+  </nav>
+</header>
+<main>
+<section><h1>Informasi Stok Buku</h1>
+<label for="cari">Cari buku<input type="search" id="cari" placeholder="Judul, penulis, atau kategori"></label>
+<div class="tabel"><table id="tbStok"><caption class="sr" hidden>Daftar stok buku</caption><thead><tr><th>Sampul</th><th>Kode</th><th>Judul</th><th>Penulis</th><th>Kategori</th><th>Harga</th><th>Stok</th><th>Aksi</th></tr></thead><tbody></tbody></table></div></section>
+<section><h2>Tambah Stok Baru</h2>
+<form id="formStok"><div class="grid2">
+<label>Sampul<select name="gambar"><option value="img/buku1.png">Sampul 1</option><option value="img/buku2.png">Sampul 2</option><option value="img/buku3.png">Sampul 3</option><option value="img/buku4.png">Sampul 4</option><option value="img/buku5.png">Sampul 5</option><option value="img/buku6.png">Sampul 6</option><option value="img/buku7.png">Sampul 7</option></select></label>
+<label>Kode<input name="kode" required placeholder="BK-007"></label>
+<label>Judul<input name="judul" required></label>
+<label>Penulis<input name="penulis" required></label>
+<label>Kategori<input name="kategori" required></label>
+<label>Harga (Rp)<input type="number" name="harga" required min="1"></label>
+<label>Stok<input type="number" name="stok" required min="0"></label></div>
+<button class="btn">Tambah ke tabel</button><p id="pStok"></p></form></section>
+</main>
+<footer><p>Toko Buku Pustaka - Tugas UTS Pemrograman Web 1</p></footer>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

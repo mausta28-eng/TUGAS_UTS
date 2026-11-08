@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login | Toko Buku Pustaka</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login" class="login">
+<main>
+  <section aria-labelledby="judul">
+    <img class="logo-besar" src="assets/logo.png" alt="Logo Toko Buku Pustaka" width="96" height="96">
+    <h1 id="judul">Masuk ke Pustaka</h1>
+    <p>Toko buku online untuk mahasiswa.</p>
+    <form id="formLogin">
+      <label for="email">Email<input type="email" id="email" required placeholder="mahasiswa@mail.com"></label>
+      <label for="password">Password<input type="password" id="password" required placeholder="123456"></label>
+      <button class="btn" type="submit" style="width:100%">Login</button>
+    </form>
+    <div class="aksi">
+      <button type="button" class="btn ghost" id="btnLupa">Lupa Password</button>
+      <button type="button" class="btn ghost" id="btnDaftar">Daftar</button>
+    </div>
+  </section>
+</main>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
